@@ -1,21 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Money.Data
+namespace Money.Data.Models
 {
-    [Table("Mortgages", Schema="Money")]
     public class Mortgage
     {
-        [Key]
         public int MortgageId { get; set; }
         public int NumberOfMonths { get; set; }
         public decimal LoanAmount { get; set; }
         public DateTime StartDate { get; set; }
-        public IEnumerable<Transaction> Transactions { get; set; }
+        public virtual ICollection<Transaction> Transactions { get; set; }
 
         public static Mortgage DefaultMortgage
         {

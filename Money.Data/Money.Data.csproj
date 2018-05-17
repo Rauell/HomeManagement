@@ -39,8 +39,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mortgage.cs" />
-    <Compile Include="Transaction.cs" />
+    <Compile Include="Models\Mortgage.cs" />
+    <Compile Include="Models\Transaction.cs" />
+    <Compile Include="MoneyContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="DnsClient, Version=1.0.7.0, Culture=neutral, PublicKeyToken=4574bb5573c51424, processorArchitecture=MSIL">
