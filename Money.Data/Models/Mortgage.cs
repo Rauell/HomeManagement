@@ -8,7 +8,7 @@ namespace Money.Data.Models
 {
     public class Mortgage
     {
-        public int MortgageId { get; set; }
+        public int Id { get; set; }
         public int NumberOfMonths { get; set; }
         public decimal LoanAmount { get; set; }
         public DateTime StartDate { get; set; }

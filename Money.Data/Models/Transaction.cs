@@ -8,7 +8,7 @@ namespace Money.Data.Models
 {
     public class Transaction
     {
-        public int TransactionId { get; set; }
+        public int Id { get; set; }
         public decimal Amount { get; set; }
         public DateTime Date { get; set; }
         public virtual Mortgage Mortgage { get; set; }
